@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_start_back"
+    tools:context=".RegisterActivity">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/display_name"
+            android:textColor="@color/start_font_apperance"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="132dp"
+       >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/start_font_apperance"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="189dp"
+        android:hint="@string/password">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/color_white"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/register_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_transparent"
+        android:text="@string/create_account"
+        android:textColor="@color/start_font_apperance"
+        android:textSize="25sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="266dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/register_con_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColor="@color/color_white" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
